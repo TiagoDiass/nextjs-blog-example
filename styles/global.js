@@ -19,10 +19,9 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-    body {
-
+  body {
     color: #fff;
-    }
+  }
     
   ol, ul {
     list-style: none;
@@ -31,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  #__next {
+    display: flex;
+    justify-content: center;
   }
 `;
 
