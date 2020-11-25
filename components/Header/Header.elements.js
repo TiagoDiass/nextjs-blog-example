@@ -9,8 +9,9 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const ProfileImage = styled.img`
-  width: 200px;
+  width: 165px;
   border-radius: 50%;
+  border: 3px solid #398bec;
 `;
 
 export const Name = styled.h1`
@@ -24,4 +25,15 @@ export const Bio = styled.p`
   text-align: center;
   font-size: 1.2rem;
   background: transparent;
+
+  a.contact-link {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.blue};
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
