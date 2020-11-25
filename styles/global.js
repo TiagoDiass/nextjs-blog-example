@@ -15,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0; 
     font-weight: normal;
     font-family: 'Source Sans Pro', sans-serif;
-    background: #191920 url('images/background.svg') no-repeat center top;
     -webkit-font-smoothing: antialiased;
   }
 
   body {
     color: #fff;
+    background: #191920 url('images/background.svg') no-repeat center top;
   }
     
   ol, ul {
