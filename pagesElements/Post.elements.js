@@ -18,7 +18,11 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   letter-spacing: -0.05rem;
   font-size: 2.5rem;
-  text-align: left;
+
+  @media screen and (max-width: 520px) {
+    font-size: 2.05rem;
+    text-align: center;
+  }
 `;
 
 export const PostDate = styled.p`

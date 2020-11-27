@@ -13,6 +13,10 @@ export const ProfilePicture = styled.img`
   width: 140px;
   border-radius: 50%;
   border: 3px solid #398bec;
+
+  @media screen and (max-width: 520px) {
+    width: 105px;
+  }
 `;
 
 export const Name = styled.h2`

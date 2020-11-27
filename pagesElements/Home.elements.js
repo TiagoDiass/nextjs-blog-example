@@ -3,6 +3,14 @@ import styled from 'styled-components';
 export const PageContainer = styled.div`
   width: 40vw;
   max-width: 1200px;
+
+  @media screen and (max-width: 920px) {
+    width: 70vw;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 90vw;
+  }
 `;
 
 export const PostsContainer = styled.main`
