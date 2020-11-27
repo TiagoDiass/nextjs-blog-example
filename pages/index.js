@@ -11,8 +11,6 @@ import {
 } from '../pagesElements/Home.elements';
 
 export default function Home({ allPostsData }) {
-  console.log(allPostsData);
-
   return (
     <>
       <Head>

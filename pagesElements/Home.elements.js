@@ -7,6 +7,7 @@ export const PageContainer = styled.div`
 
 export const PostsContainer = styled.main`
   margin-top: 1rem;
+  margin-bottom: 2rem;
 `;
 
 export const Heading = styled.h2`

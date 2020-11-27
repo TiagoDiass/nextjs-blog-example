@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { BiArrowBack } from 'react-icons/bi';
 import { Date, MiniHeader } from '../../components';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import { PageContainer } from '../../pagesElements/Home.elements';
@@ -5,12 +7,19 @@ import {
   PostWrapper,
   PostTitle,
   PostDate,
+  BackToHome,
 } from '../../pagesElements/Post.elements';
 
 export default function Post({ postData }) {
   return (
     <PageContainer>
       <MiniHeader />
+      <Link href='/'>
+        <BackToHome>
+          <BiArrowBack />
+          Home
+        </BackToHome>
+      </Link>
 
       <PostWrapper>
         <PostTitle>{postData.title}</PostTitle>
@@ -19,7 +28,10 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </PostDate>
 
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          id='post'
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </PostWrapper>
     </PageContainer>
   );
